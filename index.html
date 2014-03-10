@@ -42,7 +42,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section id='title'>
 				<section>
 					<h1>Agile/Scrum and<br/> Git work-flow</h1>
 					<p>
@@ -52,6 +52,10 @@
 				<section>
 					<h3>git merge agile scrum?</h3>
 					<img src="assets/agile-merge.jpg" />
+				</section>
+				<section>
+					<h1>Find this slide deck</h1>
+					<h2>http://davenuman.github.io</h2>
 				</section>
 				</section>
 
@@ -127,6 +131,7 @@
 
 - Duration 1-4 weeks
 - Sprint planning meeting.
+- Sprint board.   [Trello example](http://theagilecoder.files.wordpress.com/2013/11/scrumfortrelloboard.png)
 - Daily standup calls.
 - Demo potentially shippable product.
    (Can be discovery document)
@@ -134,8 +139,7 @@
 					</script>
 				</section>
 
-
-			<section>
+				<section>
 				<section data-markdown>
 					<script type="text/template">
 # User Stories
@@ -149,7 +153,7 @@
 					<p class="fragment">when blocking a user account I need to have the email address also unsubscribed from Mandrill</p>
 					<p class="fragment">so that we do not send any more mail to that user.</p>
 				</section>
-			</section>
+				</section>
 
 				<section>
 					<h2>Scrum: Burndown</h2>
@@ -169,9 +173,9 @@
 
 				<section data-markdown>
 					<script type="text/template">
-# Enough about people, what about the code?
+# Source Code Management
 
-## Source Code Management
+### Enough about people, what about the code?
 
 					</script>
 				</section>
@@ -187,16 +191,26 @@
 				</section>
 
 				<section>
-					<h2>Git</h2>
-					<p>todo...</p>
+					<h2>Git Workflow Options</h2>
+					<p><a href="https://www.atlassian.com/git/workflows">https://www.atlassian.com/git/workflows</a></p>
 				</section>
 
 
 				<section>
 					<h2>Fork me on git hub</h2>
 					<pre><code data-trim contenteditable>
-git clone this
+git clone git@github.com:davenuman/project_workflow.slides.git
 					</code></pre>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+# Related Links
+
+- [Scrum in Trello](http://civicactions.com/blog/2012/oct/10/five_tips_for_using_trello_for_scrum)
+- [Git Workflow Options](https://www.atlassian.com/git/workflows)
+- [Typical GitHub Workflow](http://guides.github.com/overviews/flow/)
+					</script>
 				</section>
 
 
@@ -216,6 +230,7 @@ git clone this
 				progress: true,
 				history: true,
 				center: true,
+				previewLinks: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
